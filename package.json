@@ -1,0 +1,38 @@
+{
+  "name": "@seaavey/scapers",
+  "version": "1.0.0",
+  "description": "The Scapers is a collection of tools for scraping data from the web.",
+  "keywords": [
+    "scapers",
+    "scraper",
+    "scrape",
+    "scraping",
+    "scraping tool",
+    "scraping tools",
+    "seaavey teams",
+    "seaavey"
+  ],
+  "scripts": {
+    "prepack": "tsc",
+    "prepare": "tsc"
+  },
+  "homepage": "https://github.com/seaavey/scapers",
+  "repository": {
+    "url": "git@github.com/seaavey/scapers.git"
+  },
+  "author": "Seaavey Teams",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/*"
+  ],
+  "devDependencies": {
+    "@types/node": "^22.13.8",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "axios": "^1.8.1",
+    "cheerio": "^1.0.0"
+  }
+}
