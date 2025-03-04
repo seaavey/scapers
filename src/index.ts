@@ -1,15 +1,27 @@
+import { Tiktok } from "./scapers/ttdl";
 import { anoboy } from "./scapers/anoboy";
 import { aio } from "./scapers/aio";
-import { populer, search } from "./scapers/AniList"; // Pastikan search diimpor jika ada
+import { Populer, populer, search } from "./scapers/AniList";
+import { GithubUser, getGitHubUser, DownloadRepo } from "./scapers/github";
 
-interface AniList {
-  populer: () => Promise<any>;
-  search: (query: string) => Promise<any>;
-}
+const TiktokDL: TiktokDL = {
+  getGitHubUser,
+  DownloadRepo,
+};
 
 const AniList: AniList = {
   populer,
   search,
 };
 
-export { AniList, anoboy, aio };
+export { AniList, TiktokDL, anoboy, aio, Tiktok };
+
+interface TiktokDL {
+  getGitHubUser: (username: string) => Promise<GithubUser>;
+  DownloadRepo: (url: string) => Promise<string>;
+}
+
+interface AniList {
+  populer: () => Promise<Populer>;
+  search: (query: string) => Promise<any>;
+}
