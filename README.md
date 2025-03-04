@@ -1,6 +1,6 @@
-# 🌟 My Awesome Project
+# 🌟 Scraping Library By Seaavey Teams
 
-Welcome to **My Awesome Project**! This repository contains a collection of tools and utilities designed to simplify interactions with various APIs and platforms. Whether you're working with anime data, social media content, or web scraping, this project has got you covered!
+Welcome to **Scraping Library**! This repository contains a collection of tools and utilities designed to simplify interactions with various APIs and platforms. Whether you're working with anime data, social media content, or web scraping, this project has got you covered!
 
 ## 🚀 Features
 
