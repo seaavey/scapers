@@ -1,30 +1,6 @@
-# 🌟 My Awesome Project
+# 🌟 Scraping Library By Seaavey Team
 
-Welcome to **My Awesome Project**! This repository contains a collection of tools and utilities designed to simplify interactions with various APIs and platforms. Whether you're working with anime data, social media content, or web scraping, this project has got you covered!
-
-## 🚀 Features
-
-Here are the key features provided by this project:
-
-- **AniList Integration**: Fetch trending, upcoming, top-rated, and seasonal anime data from [Anilist](https://anilist.co).
-- **TikTok Downloader**: Download TikTok videos with options for HD Watermark, HD No Watermark, and audio-only formats.
-- **Anoboy Scraper**: Search for anime titles and extract details from the [Anoboy](https://anoboy.li) website.
-- **GitHub Utilities**: Fetch GitHub user profiles and generate repository download links.
-- **AIO Downloader (Beta)**: A versatile downloader powered by [AnyDownloader](https://anydownloader.com).
-
-## 📋 Status
-
-Below is the current status of each module:
-
-| Module   | Status    |
-| -------- | --------- |
-| AniList  | ✅ ACTIVE |
-| TiktokDL | ✅ ACTIVE |
-| anoboy   | ✅ ACTIVE |
-| aio      | 🟨 BETA   |
-| Tiktok   | ✅ ACTIVE |
-
-> **Note**: Modules marked as "BETA" are still under testing and may have limited functionality or stability.
+Welcome to **Scraping Library**! This repository contains a collection of tools and utilities designed to simplify interactions with various APIs and platforms. Whether you're working with anime data, social media content, or web scraping, this project has got you covered!
 
 ## 🛠 Installation
 
@@ -48,6 +24,12 @@ To use this project, follow these steps:
    ```bash
    node index.js
    ```
+
+## 📚 Usage
+
+This project is designed to be modular and easy to use. Each module is self-contained and can be imported and used independently.
+
+![Tiktok Download](src/image/example-1.png)
 
 ## License
 

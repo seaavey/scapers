@@ -1,6 +1,6 @@
 {
   "name": "@seaavey/scapers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The Scapers is a collection of tools for scraping data from the web.",
   "keywords": [
     "scapers",
@@ -20,7 +20,7 @@
   "repository": {
     "url": "git@github.com/seaavey/scapers.git"
   },
-  "author": "Seaavey Teams",
+  "author": "Seaavey Team",
   "license": "MIT",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",

@@ -8,6 +8,7 @@
     "outDir": "lib",
     "strict": false,
     "strictNullChecks": true,
+    "removeComments": true,
     "skipLibCheck": true,
     "noImplicitThis": true,
     "esModuleInterop": true,
