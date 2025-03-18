@@ -51,3 +51,21 @@ If you have any questions or need further assistance, feel free to reach out to 
 
 - Email: seaavey@gmail.com
 - GitHub: Seaavey
+
+## 🙏 Thanks To
+
+- **Seaavey Team** - For development and support
+- **Open-source Contributors** - For improving this project
+- **All Users & Testers** - For feedback and suggestions
+
+## 📞 Contact Us
+
+For support or inquiries, reach out to us:
+
+- 🌐 [Website](https://seaavey.biz.id)
+- ✉️ Email: seaavey@gmail.com
+- 📢 Follow us on [Whatsapp Channel](https://whatsapp.com/channel/0029Vb49mcTEgGfJRWTyuz35)
+
+---
+
+Made with ❤️ by **Seaavey Team**
