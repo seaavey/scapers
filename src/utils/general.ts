@@ -45,3 +45,32 @@ export const toLower = (str: string) => str.toLowerCase()
  * @returns {any} A random element from the array.
  */
 export const pickRandom = arr => arr[Math.floor(Math.random() * arr.length)]
+
+/**
+ * Converts a given string to a title case format.
+ *
+ * @param {string} str - The string to convert to title case
+ * @returns {string}  The input string converted to title case
+ *
+ */
+export const Styles = async (text: string): Promise<string> => {
+  var xStr = "abcdefghijklmnopqrstuvwxyz1234567890".split("")
+  var yStr = Object.freeze({
+    1: "ᴀʙᴄᴅᴇꜰɢʜɪᴊᴋʟᴍɴᴏᴘqʀꜱᴛᴜᴠᴡxʏᴢ1234567890"
+  })
+  var replacer = [] as any
+
+  xStr.map((v, i) =>
+    replacer.push({
+      original: v,
+      convert: yStr[1].split("")[i]
+    })
+  )
+  var str = text.toLowerCase().split("")
+  var output = [] as any
+  str.map(v => {
+    const find = replacer.find(x => x.original == v) || []
+    find ? output.push(find.convert) : output.push(v)
+  })
+  return output.join("")
+}

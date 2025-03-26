@@ -1,5 +1,5 @@
-import axios from "axios";
-import * as cheerio from "cheerio";
+import axios from "axios"
+import * as cheerio from "cheerio"
 
 /**
  * Fetches anime search results from the Anoboy website based on a query.
@@ -11,36 +11,33 @@ import * as cheerio from "cheerio";
  * It extracts anime details such as title, type, thumbnail URL, and link from the search results.
  * If an error occurs during the request, it rejects the promise with an error message.
  */
-export const anoboy = async (query: string): Promise<Anoboy[] | undefined> => {
+const anoboy = async (query: string): Promise<Anoboy[] | undefined> => {
   return new Promise(async (resolve, reject) => {
     await axios
       .get("https://anoboy.li/?s=" + encodeURIComponent(query))
       .then(async ({ data }) => {
-        let $ = cheerio.load(data);
-        let array = [] as Anoboy[];
+        let $ = cheerio.load(data)
+        let array = [] as Anoboy[]
         $(".bsx").each((a: Number, i: any) => {
           array.push({
-            title: $(i)
-              .find("a > .tt")
-              .text()
-              .replace($(i).find("a > .tt > h2").text(), "")
-              .trim(),
+            title: $(i).find("a > .tt").text().replace($(i).find("a > .tt > h2").text(), "").trim(),
             type: $(i).find(".limit > .typez").text(),
             thumb: $(i).find(".limit > img").attr("src"),
-            url: $(i).find("a").attr("href"),
-          });
-        });
-        resolve(array);
+            url: $(i).find("a").attr("href")
+          })
+        })
+        resolve(array)
       })
-      .catch((err) => {
+      .catch(err => {
         reject({
           error: err,
-          message: "An error occurred while fetching the data",
-        });
-      });
-  });
-};
+          message: "An error occurred while fetching the data"
+        })
+      })
+  })
+}
 
+export default anoboy
 /**
  * Interface representing an anime result from the Anoboy website.
  */
@@ -48,20 +45,20 @@ export interface Anoboy {
   /**
    * The title of the anime.
    */
-  title: string;
+  title: string
 
   /**
    * The type of the anime (e.g., TV, Movie, OVA).
    */
-  type: string;
+  type: string
 
   /**
    * The URL of the anime's thumbnail image.
    */
-  thumb: string | undefined;
+  thumb: string | undefined
 
   /**
    * The URL linking to the anime's details page.
    */
-  url: string | undefined;
+  url: string | undefined
 }
