@@ -5,8 +5,9 @@ import instagram from "./scapers/igdl"
 import negro from "./scapers/negro"
 import anoboy from "./scapers/anoboy"
 import aio from "./scapers/aio"
+import text2img from "./scapers/text2img"
 
-export { anoboy, aio, translate, deepseekv1, jawdalSholat, instagram, negro }
+export { anoboy, aio, translate, deepseekv1, jawdalSholat, instagram, negro, text2img }
 
 import * as func from "./utils/general"
 import * as bstation from "./scapers/bstation"
