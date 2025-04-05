@@ -1,5 +1,3 @@
-import fetch from "node-fetch"
-
 export type Style = "default" | "realistic" | "anime" | "ghibli" | "cartoon" | "3d" | "fantasy" | "chibi" | "superhero" | "cyberpunk" | "disney" | "pokemon" | "dnd art" | "furry art" | "villain" | "pixel art" | "sailor moon" | "npc"
 export type Aspect = "1:1" | "2:3" | "3:2" | "9:16"
 
