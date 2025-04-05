@@ -7,9 +7,12 @@ import anoboy from "./scapers/anoboy"
 import aio from "./scapers/aio"
 import text2img from "./scapers/text2img"
 
-export { anoboy, aio, translate, deepseekv1, jawdalSholat, instagram, negro, text2img }
+import Pterodactyl from "./utils/pterodacty"
+
+export { anoboy, aio, translate, deepseekv1, jawdalSholat, instagram, negro, text2img, Pterodactyl }
 
 import * as func from "./utils/general"
+
 import * as bstation from "./scapers/bstation"
 import * as Tiktok from "./scapers/tiktok"
 import * as AniList from "./scapers/AniList"
