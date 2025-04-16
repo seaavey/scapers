@@ -1,6 +1,6 @@
 {
   "name": "@seaavey/scapers",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "The Scapers is a collection of tools for scraping data from the web.",
   "keywords": [
     "scapers",
@@ -29,10 +29,8 @@
   ],
   "dependencies": {
     "axios": "^1.8.1",
-    "axios-cookiejar-support": "^5.0.5",
     "cheerio": "^1.0.0",
-    "node-fetch": "^3.3.2",
-    "tough-cookie": "^5.1.2"
+    "node-fetch": "^3.3.2"
   },
   "devDependencies": {
     "@types/node": "^22.13.8",

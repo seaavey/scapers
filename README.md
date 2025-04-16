@@ -58,6 +58,11 @@ If you have any questions or need further assistance, feel free to reach out to 
 - **Open-source Contributors** - For improving this project
 - **All Users & Testers** - For feedback and suggestions
 
+## Collaborators
+
+- [Kaviaann](https://github.com/Kaviaann)
+- [SxyzVerse](https://github.com/SxyzVerse)
+
 ## 📞 Contact Us
 
 For support or inquiries, reach out to us:
