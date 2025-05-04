@@ -1,0 +1,44 @@
+{
+  "name": "@seaavey/scapers",
+  "version": "1.0.8",
+  "description": "The Scapers is a collection of tools for scraping data from the web.",
+  "keywords": [
+    "scapers",
+    "scraper",
+    "scrape",
+    "scraping",
+    "scraping tool",
+    "scraping tools",
+    "seaavey teams",
+    "seaavey"
+  ],
+  "scripts": {
+    "prepack": "tsc",
+    "prepare": "tsc",
+    "build:tsc": "tsc",
+    "build:docs": "npx typedoc ./src --plugin typedoc-material-theme",
+    "build:all": "npm run build:tsc && npm run build:docs"
+  },
+  "homepage": "https://github.com/seaavey/scapers",
+  "repository": {
+    "url": "git@github.com/seaavey/scapers.git"
+  },
+  "author": "Seaavey Team",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/*"
+  ],
+  "dependencies": {
+    "axios": "^1.8.1",
+    "cheerio": "^1.0.0",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.8",
+    "typedoc": "^0.28.3",
+    "typedoc-material-theme": "^1.4.0",
+    "typescript": "^5.8.3"
+  }
+}

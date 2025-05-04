@@ -1,0 +1,12 @@
+{
+  "out": "docs/api",
+  "plugin": ["typedoc-material-theme"],
+  "themeColor": "#cb9820",
+  "entryPoints": ["src"],
+  "excludePrivate": true,
+  "excludeProtected": true,
+  "excludeExternals": true,
+  "exclude": ["./src/index.ts"],
+  "includeVersion": false,
+  "entryPointStrategy": "expand"
+}
